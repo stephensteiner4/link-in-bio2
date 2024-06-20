@@ -1,3 +1,3 @@
-# static-html-template
+# link-in-bio
 
-Use this template to create static HTML websites and deploy them on Render.
+Stephen Steiner first AppDev project to create page containing series of links below a picture of me
