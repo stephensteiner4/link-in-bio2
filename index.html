@@ -9,6 +9,24 @@
             * {
               border: 1px red dashed;
             }
+
+            body {
+              padding-top: 40px;
+              padding-bottom: 40px;
+            }
+
+            .avatar-image {
+              width:128px;
+              height:128px;
+              object-fit:cover;
+            }
+
+            .thumbnail {
+              width: 48px;
+              height: 48px;
+              border-radius: 48px;
+              object-fit: cover;
+            }
           </style>
 
     </head>
@@ -16,7 +34,7 @@
     <body>
         <div class="main-container">
             <div class="image-row">
-              <img src="images/steiner_profile_pic.jpg">
+              <img class="avatar-image" src="images/steiner_profile_pic.jpg" alt="Stephen Steiner headshot">
             </div>
 
             <div class="name-row">
@@ -34,19 +52,23 @@
 
             <div class="links-row">
               <div class="item">
-                <img src="images/yosemite.jpg">
-
+                <img class="thumbnail" src="/images/yosemite.jpg" alt="yosemite half dome">
                 <a target="_blank" href="https://californiathroughmylens.com/yosemite-falls/">Yosemite Falls Trail</a>
               </div>
 
               <div class="item">
-                <img src="images/golf.jpg">
+                <img class="thumbnail" src="/images/golf.jpg">
                 <a target="_blank" href="https://www.schaumburggolf.com/">Schaumburg Golf Club</a>
               </div>
 
               <div class="item">
-                <img src="images/petunias.jpg">
-                <a target="_blank" href=""
+                <img class="thumbnail" src="/images/blueberries.jpg">
+                <a target="_blank" href="https://www.starrosesandplants.com/plants/pink-icing/">My recent blueberry bush</a>
+              </div>
+
+              <div class="item">
+                <img class="thumbnail" src="/images/flag.jpg">
+                <a target="_blank" href="https://eriklarsonbooks.com/book/the-demon-of-unrest/">The Demon of Unrest</a>
               </div>
             </div>
         </div>
