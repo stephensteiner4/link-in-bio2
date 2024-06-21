@@ -4,21 +4,49 @@
     <head>
         <title>link-in-bio project</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Font Awesome -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+        <!-- Google Font library: https://fonts.google.com/ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+AU+VIC:wght@100..400&family=Playwrite+ES:wght@100..400&display=swap" rel="stylesheet">
 
         <style>
-            * {
-              border: 1px red dashed;
+            html {
+              min-height: 100%;
             }
+
+            /* * {
+              border: 1px red dashed;
+            } */
 
             body {
               padding-top: 40px;
               padding-bottom: 40px;
+              background: linear-gradient(90deg, #ff3148, #ff3d7b, #fc57aa, #e974d1, #cd8eed, #aea4fe, #95b6ff, #88c5ff);
+              min-height: 100%;
+              color:white;
+              font-family: "Merriweather";
+            }
+
+            a {
+              color: white;
+              text-decoration: none;
+            }
+
+            .main-container {
+              max-width: 640px;
+              margin:auto;
             }
 
             .avatar-image {
               width:128px;
               height:128px;
               object-fit:cover;
+              border-radius: 128px;
             }
 
             .thumbnail {
@@ -27,6 +55,41 @@
               border-radius: 48px;
               object-fit: cover;
             }
+
+            .item {
+              background-color: rgba(153, 91, 211, 0.493);
+              margin-bottom: 20px;
+              display: flex;
+              align-items: center;
+              border-radius: 1000px;
+              padding: 5px;
+              box-shadow: 10px 10px 25px 8px rgba(0,0,0,0.75);
+            }
+
+            .image-row {
+              margin-bottom: 20px;
+              text-align: center;
+            }
+
+            .name-row {
+              margin-bottom: 30px;
+              text-align: center;
+              font-family: "Playwrite AU VIC";
+              font-weight: 900;
+              font-size: 24px;
+            }
+
+            .social-icons-row {
+              margin-bottom: 30px;
+              display: flex;
+              justify-content: space-around;
+            }
+
+            .link-text {
+              text-align: center;
+              flex-grow: 1;
+            }
+
           </style>
 
     </head>
@@ -43,32 +106,32 @@
             </div>
 
             <div class="social-icons-row">
-              <a href="https://www.facebook.com/stephen.steiner.583" target="_blank">Facebook</a>
+              <a href="https://www.facebook.com/stephen.steiner.583" target="_blank"><i class="fa-brands fa-facebook"></i></a>
 
-              <a href="https://www.linkedin.com/in/stephen-steiner-86b872145/" target="_blank">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/stephen-steiner-86b872145/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
 
-              <a href="https://github.com/stephensteiner4" target="_blank">GitHub</a>
+              <a href="https://github.com/stephensteiner4" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
 
             <div class="links-row">
               <div class="item">
                 <img class="thumbnail" src="/images/yosemite.jpg" alt="yosemite half dome">
-                <a target="_blank" href="https://californiathroughmylens.com/yosemite-falls/">Yosemite Falls Trail</a>
+                <a class="link-text" target="_blank" href="https://californiathroughmylens.com/yosemite-falls/">Yosemite Falls Hike Overview</a>
               </div>
 
               <div class="item">
                 <img class="thumbnail" src="/images/golf.jpg">
-                <a target="_blank" href="https://www.schaumburggolf.com/">Schaumburg Golf Club</a>
+                <a class="link-text" target="_blank" href="https://www.schaumburggolf.com/">My favorite local golf club</a>
               </div>
 
               <div class="item">
                 <img class="thumbnail" src="/images/blueberries.jpg">
-                <a target="_blank" href="https://www.starrosesandplants.com/plants/pink-icing/">My recent blueberry bush</a>
+                <a class="link-text" target="_blank" href="https://www.starrosesandplants.com/plants/pink-icing/">My recent garden addition</a>
               </div>
 
               <div class="item">
                 <img class="thumbnail" src="/images/flag.jpg">
-                <a target="_blank" href="https://eriklarsonbooks.com/book/the-demon-of-unrest/">The Demon of Unrest</a>
+                <a class="link-text" target="_blank" href="https://eriklarsonbooks.com/book/the-demon-of-unrest/">What I'm reading right now: <em>The Demon of Unrest</em></a>
               </div>
             </div>
         </div>
